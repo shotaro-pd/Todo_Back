@@ -40,7 +40,7 @@ module TodoBack
         origins 'http://localhost:8080'
         resource "*",
           headers: :any,
-          methods: [:get, :post, :options, :head]
+          methods: [:get, :post, :options, :head, :delete, :put, :patch]
       end
     end
   end
