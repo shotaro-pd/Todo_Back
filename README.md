@@ -1,5 +1,13 @@
 # Ruby on Rails学習用Todoアプリ（バックエンド）
 
+## 使うコマンド
+
+* Postgresql起動
+
+```
+pg_ctl -D /usr/local/var/postgres start
+```
+
 ## わかったこと
 ### Controllerでの'@'について
 * '@'はインスタンス変数を指すもので、そのクラスであればどこからでもアクセスができるもの
@@ -23,4 +31,6 @@ resources :tasks do
     end
 end
 ```
+
+
 

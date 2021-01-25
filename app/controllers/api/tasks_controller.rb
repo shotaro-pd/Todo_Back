@@ -11,7 +11,7 @@ class Api::TasksController < ApplicationController
     end
 
     def show_tag
-        task = Task.find_by(tag: params[:id])
+        task = Task.where(tag: params[:id]).order(created_at: :desc)
         render json: { status: 'SUCCESS', message: '特定のタグリストを取得', data: task }
     end
 
