@@ -16,12 +16,11 @@
     * memberで/task/:id/show_tag
     * collectionで/task/show_tag
 
-'''
-
+```
 resources :tasks do
     member do
         get :show_tag
     end
 end
-'''
+```
 
