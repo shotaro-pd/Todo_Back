@@ -17,6 +17,7 @@
     * collectionで/task/show_tag
 
 '''
+
 resources :tasks do
     member do
         get :show_tag
