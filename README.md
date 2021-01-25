@@ -15,6 +15,7 @@
 * 基本的なCRUD以外を追加したいときは下記のようにresources doで囲む
     * memberで/task/:id/show_tag
     * collectionで/task/show_tag
+
 '''
 resources :tasks do
     member do
