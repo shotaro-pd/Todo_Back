@@ -20,7 +20,7 @@ class Api::TasksController < ApplicationController
         if task.save
             render json: { status: 'SUCCESS',message: 'タスクの作成成功', data: task }
         else
-            render json: { status: 'ERROR',message: 'タグ、タスクの入力エラー', data: task.errors }
+            render json: { status: 'ERROR',message: 'タグ、タスクの入力エラー', data: task.errors }, status: :unprocessable_entity
         end
     end
 
